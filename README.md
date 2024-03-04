@@ -26,11 +26,13 @@ import pandas as pd
 df=pd.read_csv("/content/SAMPLEIDS.csv")
 df
 
-![output 1](https://github.com/chgeethika/ex-no1/assets/142209368/cc27d6cf-05b5-4b55-9c0a-2c03001688f9)
+![307849926-cc27d6cf-05b5-4b55-9c0a-2c03001688f9](https://github.com/Prakashmathi2004/exno1/assets/118350045/df22c8dc-336b-4daf-a191-2d126138df7c)
+
 
 print(df.head(7))
 
-![o 3](https://github.com/chgeethika/ex-no1/assets/142209368/ad269980-fb09-4705-991a-7076f0b28700)
+![2](https://github.com/Prakashmathi2004/exno1/assets/118350045/ef50472b-8bdd-4d1b-a076-9e8065f13621)
+
 
 print(df.tail(2))
 
@@ -38,60 +40,80 @@ print(df.tail(2))
 
 df.info()
 
-![o5](https://github.com/chgeethika/ex-no1/assets/142209368/811fbadb-3961-4c7d-b945-60ef2d52005c)
+![3](https://github.com/Prakashmathi2004/exno1/assets/118350045/80f63398-6ed2-4e1d-8e29-cec2cab464ca)
 
+```
 print(df.describe())
+```
 
-![o6](https://github.com/chgeethika/ex-no1/assets/142209368/0c207343-ef54-4b43-b547-1a5af544a062)
+![4](https://github.com/Prakashmathi2004/exno1/assets/118350045/12e4523b-4886-4856-80f9-d1ed1d1da176)
 
+```
 df.isnull().sum()
+```
 
-![o7](https://github.com/chgeethika/ex-no1/assets/142209368/87c68baa-7624-4e1a-971a-80c83eb61d90)
+![5](https://github.com/Prakashmathi2004/exno1/assets/118350045/476614ef-43bf-43c8-a0e8-26a5e72b7305)
 
+```
 df.nunique()
+```
 
-![o8](https://github.com/chgeethika/ex-no1/assets/142209368/9d9493c9-6e0b-4ee6-89be-17cbd2e5e56d)
+![7](https://github.com/Prakashmathi2004/exno1/assets/118350045/6fe20dc2-23b3-45cc-b8f7-b30b02f74af2)
 
+```
 mn=df.TOTAL.mean()
 mn
+```
 
-![mn](https://github.com/chgeethika/ex-no1/assets/142209368/37a126cd-8ea9-4c65-af75-2697bddd6a35)
+![8](https://github.com/Prakashmathi2004/exno1/assets/118350045/fbf24d9d-9648-4267-b28c-d5cfa3fea9c7)
 
 
+```
 df.TOTAL.fillna(mn,inplace=True)
 df
+```
 
-![o9](https://github.com/chgeethika/ex-no1/assets/142209368/52bc6f65-7e58-4246-b74d-aaab99b4fb0d)
+![9](https://github.com/Prakashmathi2004/exno1/assets/118350045/fa8cb419-762a-4eda-b10a-aa52fe0d2108)
 
+```
 min=df.M4.min()
 min
+```
 
-![min](https://github.com/chgeethika/ex-no1/assets/142209368/3571db1b-b18c-439e-814b-4ecc847615c4)
+![10](https://github.com/Prakashmathi2004/exno1/assets/118350045/f1e24de5-10a5-48f5-8944-6d0f98a4b551)
 
+```
 df.M4.fillna(min,inplace=True)
 df
+```
 
-![o10](https://github.com/chgeethika/ex-no1/assets/142209368/193b4f4d-cb59-4493-bafe-2c3aebb9c503)
+![11](https://github.com/Prakashmathi2004/exno1/assets/118350045/9a95c8e3-6031-4a15-a51b-6f75e88a3833)
 
-![o10](https://github.com/chgeethika/ex-no1/assets/142209368/5a0746c8-ed4d-4dc3-a67f-c6e9656ce551)
 
-import pandas as pd
-import seaborn as sns
+![12](https://github.com/Prakashmathi2004/exno1/assets/118350045/102ba8f6-22ef-4261-ab29-f7630d799268)
+```
+import pandas as pd            
+import seaborn as sns      
 age=[1,3,28,27,25,92,30,39,40,50,26,24,29,94]
 af=pd.DataFrame(age)
 af
+```
 
-![o12](https://github.com/chgeethika/ex-no1/assets/142209368/35531f01-5402-4cc1-991f-a07e62dacf48)
+![13](https://github.com/Prakashmathi2004/exno1/assets/118350045/4e8ed674-4aff-4af0-96e4-7efe0bbebcbd)
+
 
 sns.boxplot(data=af)
 
-![o13](https://github.com/chgeethika/ex-no1/assets/142209368/32e94065-fd93-4f9e-93ec-5f3894e955b4)
+![14](https://github.com/Prakashmathi2004/exno1/assets/118350045/e2657120-59f0-41bb-ba3b-ab74edf220e9)
 
 
+```
 sns.scatterplot(data=af)
+```
 
-![o14](https://github.com/chgeethika/ex-no1/assets/142209368/3d0adb77-0703-44c3-9261-f74cb1f0b920)
+![15](https://github.com/Prakashmathi2004/exno1/assets/118350045/4ea36b3d-033c-436b-bce8-48d2b9c5ea6b)
 
+```
 q1=af.quantile(0.25)
 q2=af.quantile(0.50)
 q3=af.quantile(0.75)
@@ -101,17 +123,18 @@ low=q1-1.5*iqr
 low
 high=q3+1.5*iqr
 high
+```
+![16](https://github.com/Prakashmathi2004/exno1/assets/118350045/d27da8cc-c75b-4062-be1e-d3c1c665f2aa)
 
-![o15](https://github.com/chgeethika/ex-no1/assets/142209368/225a452e-83d4-4210-8748-e8add5b925e1)
 
 af=af[((af>=low)&(af<=high))]
 af
 
-![o16](https://github.com/chgeethika/ex-no1/assets/142209368/49056f63-9937-4109-a285-8c4388441f46)
+![17](https://github.com/Prakashmathi2004/exno1/assets/118350045/6da3bbf6-6284-4dce-a43f-2549d291ca41)
 
 af.dropna()
 
-![o17](https://github.com/chgeethika/ex-no1/assets/142209368/466a854d-4b2f-43c8-85f8-ac94ad6e38d5)
+![18](https://github.com/Prakashmathi2004/exno1/assets/118350045/3c8ef0c0-770b-4c44-99c9-811bafd3bc7f)
 
 sns.boxplot(data=af)
 
