@@ -144,18 +144,19 @@ sns.boxplot(data=af)
 sns.scatterplot(data=af)
 
 ![o19](https://github.com/chgeethika/ex-no1/assets/142209368/d294460b-cd0a-4f8e-8ea7-495169adb75c)
-
-data=[1,12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,99,102,105]
-df=pd.DataFrame(data)
-df
+```
+data=[1,12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,99,102,105]         
+df=pd.DataFrame(data)            
+df    
+```
 
 ![o20](https://github.com/chgeethika/ex-no1/assets/142209368/bff14676-97ae-4ebd-9897-89d9e8a3bc87)
-
-import numpy as np
-from scipy import stats
-z=np.abs(stats.zscore(df))
-z
-
+```
+import numpy as np    
+from scipy import stats     
+z=np.abs(stats.zscore(df))   
+z     
+```
 ![o22](https://github.com/chgeethika/ex-no1/assets/142209368/9a5242a4-f1c6-4ffa-96b1-fa68c0aa81ab)
 
 # Result
